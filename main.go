@@ -21,5 +21,8 @@ func main() {
 	if err != nil {
 		fmt.Printf("error in check %v\n", err)
 	}
-
+	err = handlr.CreateKeys(ctx, 8, 4)
+	if err != nil {
+		fmt.Printf("error in CreateKeys %v\n", err)
+	}
 }
